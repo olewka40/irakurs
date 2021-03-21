@@ -8,7 +8,7 @@ export const ContactsSlide = () => {
       <Title>НАШИ КОНТАКТЫ</Title>
       <Block>
         <Image>
-          <img src={contacts} />
+          <img src={contacts} alt="" />
         </Image>
         <Contacts>
           <Contact>

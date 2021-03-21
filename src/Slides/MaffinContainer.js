@@ -2,8 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import maf from "../images/maf.jpg";
 import bananaVafles from "../images/banana_vafles.jpg";
+// тут ты импортируешь Хук ( про него напиши шо он делает на сайте есть инфа главнов про react-router)
+import { useHistory } from "react-router";
 
 export const MaffinContainer = () => {
+  // тут ты присваиваешь переменной этот хук
+  const history = useHistory();
+// це функция которая переадресует тебя в меню ( прописан путь в апп js там найдешь название MEnuList и путь, обязательно напиши  шо называния совпадать должны путей иначе хуй)
+  const toMenu = () => {
+    // тут ты обращаешься к хистори после нажатия на кнопку ( на онклике ниже в кнопке функция эта висит) и в методе пуш передаешь путь к меню и все гуд
+    history.push("/menu");
+  };
   return (
     <>
       <LeftPart>
@@ -27,15 +36,17 @@ export const MaffinContainer = () => {
             Бизнес-ланчи
           </MenuText>
           <MenuNav>
-            <MenuButton>МЕНЮ</MenuButton>
+            {/* tut как раз ты переджаешь функцию в онклик, скажешь что так пизже потому что не подсвечивается текст и нет загромождения и прочей хуеты*/}
+            <MenuButton onClick={toMenu}>МЕНЮ</MenuButton>
           </MenuNav>
         </Menu>
       </LeftPart>
       <RightPart>
         <Star>
+          {/* это векторная графика твоей Стар, хуета, можешь не сильно на неё внимание обращать просто скажи что скопировала из конструктора */}
           <svg
             fill="white"
-            width="110px"
+            width="30%"
             x="0px"
             y="0px"
             viewBox="0 0 500 500.008"
@@ -48,6 +59,7 @@ export const MaffinContainer = () => {
             </g>
           </svg>
         </Star>
+        {/* тут ты в срц ссылку кидаешь на картинку которая у тебя в папке имагес лежит, чтобы опять же таки не говнокодить , а бабанавафелс импортишь сверху */}
         <BananaVafelsImg src={bananaVafles} />
       </RightPart>
     </>
@@ -56,39 +68,41 @@ export const MaffinContainer = () => {
 const LeftPart = styled.div`
   display: flex;
   flex-direction: column;
-  width: 1400px;
+  width: 72.5%;
 `;
 const RightPart = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: (100% - 1400px);
+  width: 27.5%;
 `;
 const LogoContainer = styled.div`
   display: flex;
   flex-direction: column;
 `;
 const MafLogoImg = styled.img`
-  margin-top: 6px;
-  height: 725px;
-  width: 1400px;
+  margin-top: 0.351%;
+  height: 94.5%;
+  max-width: 100%;
 `;
 const Text = styled.div`
   position: absolute;
   z-index: 2;
   color: white;
   font-size: 105px;
-  transform: translate(50px, 175px);
+  transform: translate(5%, 43%);
 `;
 const TopText = styled.div`
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
   font-size: 200px;
-  margin-top: -80px;
+  margin-top: -8.3%;
   font-family: Raleway Heavy, sans-serif;
   font-family: system-ui;
   font-weight: 700;
+  
+  // это селектор называется (:) типа ты говоришь последнему элементу который находится тут что он должен на 100 подняться 
   div:last-child {
     margin-top: -100px;
   }
@@ -106,12 +120,13 @@ const Star = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  margin: 15px;
-  height: 325px;
+  height: 40%;
+  margin-top: 5%;
+  margin-right: 2%;
 `;
 const BananaVafelsImg = styled.img`
-  width: 503px;
-  height: 600px;
+  width: 100%;
+  //height: 600px;
 `;
 const Menu = styled.div`
   display: flex;
@@ -120,27 +135,33 @@ const Menu = styled.div`
   color: white;
   margin-left: 64px;
   font-size: 47px;
-  margin-top: 10px;
+
+  margin-top: -25px;
+  height: 95%;
 `;
 const MenuText = styled.div`
+  line-height: 50px;
   font-family: Alieron Regular;
   font-family: system-ui;
 `;
 const MenuButton = styled.button`
-  width: 150px;
-  height: 64px;
+  width: 26%;
+  height: 36%;
   margin-right: 20px;
   border-radius: 20px;
   color: black;
   outline: none;
   border: 0;
-  box-shadow: 0 20px 32px 0 rgb(49 49 49 / 20%) inset;
+  font-family: Raleway Heavy, sans-serif;
+  font-family: system-ui;
+  font-weight: 700;
   border-style: solid none;
   font-size: 36px;
-  font-family: Open Sans Light, serif;
+  margin-bottom: 20px;
 `;
 const MenuNav = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  width: 62%;
 `;
