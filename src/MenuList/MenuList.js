@@ -1,5 +1,47 @@
 import React from "react";
 import styled from "styled-components";
+import cezar from "./imagesMenu/foto3.png";
+
+const salatMenu = [
+  {
+    name: "«Капрезе»",
+    consistOf:
+      "Томат, сыр Моцарелла, соус Песто, бальзамический соус,\n" +
+      '    базилик "100/60/30" гр 360 ккал',
+    price: 360,
+    image: cezar,
+  },
+  {
+    name: "«12312»",
+    consistOf:
+      "Томат, сыр Моцарелла, соус Песто, бальзамический соус,\n" +
+      '    базилик "100/60/30" гр 360 ккал',
+    price: 360,
+    image: cezar,
+  },
+  {
+    name: "«К12312апрезе»",
+    consistOf:
+      "Томат, сыр Моцарелла, соус Песто, бальзамический соус,\n" +
+      '    базилик "100/60/30" гр 360 ккал',
+    price: 360,
+    image: cezar,
+  },
+  {
+    name: "«36233»",
+    consistOf:
+      "Томат, сыр Моцарелла, соус Песто, бальзамический соус,\n" +
+      '    базилик "100/60/30" гр 360 ккал',
+    price: 360,
+    image: cezar,
+  },
+];
+const soups = [
+  { name: "", consistOf: "sostav", price: 99, image: cezar },
+  { name: "", consistOf: "sostav", price: 99, image: cezar },
+  { name: "", consistOf: "sostav", price: 99, image: cezar },
+  { name: "", consistOf: "sostav", price: 99, image: cezar },
+];
 
 export const MenuList = () => {
   return (
@@ -18,9 +60,24 @@ export const MenuList = () => {
         <Group>
           <GroupTitle> Салаты и закуски</GroupTitle>
           <GruopItems>
-            {[1, 2, 3, 4].map((e) => (
+            {salatMenu.map((e) => (
               <Item>
-                <Image></Image>
+                <Image src={e.image} />
+                <ItemText>
+                  <TitleItem>{e.name}</TitleItem>
+                  <ItemSostav>{e.consistOf}</ItemSostav>
+                  <ItemPrice>{e.price} РУБ</ItemPrice>
+                </ItemText>
+              </Item>
+            ))}
+          </GruopItems>
+        </Group>
+        <Group>
+          <GroupTitle> Супы </GroupTitle>
+          <GruopItems>
+            {soups.map((e) => (
+              <Item>
+                <Image src={cezar} />
                 <ItemText>
                   <TitleItem>«Капрезе»</TitleItem>
                   <ItemSostav>
@@ -39,7 +96,6 @@ export const MenuList = () => {
 };
 
 const MenuListContainer = styled.div`
-  height: 100%;
   width: 100%;
   background: #0dbda3;
   display: flex;
@@ -83,44 +139,67 @@ const Group = styled.div`
   color: white;
   height: 100%;
   width: 100%;
+  margin-bottom: 20px;
 `;
 const GroupTitle = styled.div`
   font-size: 250%;
   font-family: Alieron Regular, serif;
   font-family: system-ui;
-  font-weight: 400;
+  font-weight: 500;
+  text-transform: uppercase;
 `;
 const GruopItems = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 const Item = styled.div`
-  width: 44%;
-  height: 34%;
+  width: 800px;
+  height: 260px;
   display: flex;
   flex-direction: row;
   border-radius: 12px;
-  border: 6px solid white;
+  border: 8px solid white;
   margin: 1%;
 `;
-const Image = styled.div`
+const Image = styled.img`
   width: 50%;
-  background: chocolate;
-  border-radius: 12px;
+  height: 100%;
+
+  border-radius: 5px;
 `;
 const ItemText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 50%;
+  height: 100%;
+  padding: 10px;
 `;
 const ItemPrice = styled.div`
   display: flex;
   justify-content: flex-end;
   text-transform: uppercase;
+  font-family: Raleway Heavy, sans-serif;
+  font-family: system-ui;
+  font-size: 28px;
+  font-weight: 500;
 `;
-const TitleItem = styled.div``;
-const ItemSostav = styled.div``;
+const TitleItem = styled.div`
+  font-family: Raleway Heavy, sans-serif;
+  font-family: system-ui;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+`;
+const ItemSostav = styled.div`
+  font-family: Raleway Heavy, sans-serif;
+  font-family: system-ui;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+`;
