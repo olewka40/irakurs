@@ -8,7 +8,7 @@ import { useHistory } from "react-router";
 export const MaffinContainer = () => {
   // тут ты присваиваешь переменной этот хук
   const history = useHistory();
-// це функция которая переадресует тебя в меню ( прописан путь в апп js там найдешь название MEnuList и путь, обязательно напиши  шо называния совпадать должны путей иначе хуй)
+  // це функция которая переадресует тебя в меню ( прописан путь в апп js там найдешь название MEnuList и путь, обязательно напиши  шо называния совпадать должны путей иначе хуй)
   const toMenu = () => {
     // тут ты обращаешься к хистори после нажатия на кнопку ( на онклике ниже в кнопке функция эта висит) и в методе пуш передаешь путь к меню и все гуд
     history.push("/menu");
@@ -46,7 +46,6 @@ export const MaffinContainer = () => {
           {/* это векторная графика твоей Стар, хуета, можешь не сильно на неё внимание обращать просто скажи что скопировала из конструктора */}
           <svg
             fill="white"
-            width="30%"
             x="0px"
             y="0px"
             viewBox="0 0 500 500.008"
@@ -101,8 +100,11 @@ const TopText = styled.div`
   font-family: Raleway Heavy, sans-serif;
   font-family: system-ui;
   font-weight: 700;
-  
-  // это селектор называется (:) типа ты говоришь последнему элементу который находится тут что он должен на 100 подняться 
+  @media (min-width: 2000px) {
+    font-size: 250px;
+  }
+
+  // это селектор называется (:) типа ты говоришь последнему элементу который находится тут что он должен на 100 подняться
   div:last-child {
     margin-top: -100px;
   }
@@ -115,6 +117,9 @@ const BotText = styled.div`
   text-decoration: none;
   font-size: 48px;
   margin-left: 10px;
+  @media (min-width: 2000px) {
+    font-size: 85px;
+  }
 `;
 const Star = styled.div`
   display: flex;
@@ -123,6 +128,12 @@ const Star = styled.div`
   height: 40%;
   margin-top: 5%;
   margin-right: 2%;
+  > svg {
+    width: 30%;
+    @media (min-width: 2000px) {
+      width: 40%;
+    }
+  }
 `;
 const BananaVafelsImg = styled.img`
   width: 100%;
@@ -134,15 +145,21 @@ const Menu = styled.div`
   justify-content: space-between;
   color: white;
   margin-left: 64px;
-  font-size: 47px;
 
   margin-top: -25px;
   height: 95%;
 `;
 const MenuText = styled.div`
+  font-size: 47px;
+
   line-height: 50px;
   font-family: Alieron Regular;
   font-family: system-ui;
+  @media (min-width: 2000px) {
+    font-size: 90px;
+    line-height: 100px;
+    width: 100%;
+  }
 `;
 const MenuButton = styled.button`
   width: 26%;
@@ -158,6 +175,10 @@ const MenuButton = styled.button`
   border-style: solid none;
   font-size: 36px;
   margin-bottom: 20px;
+  @media (min-width: 2000px) {
+    width: 250px;
+    height: 150px;
+  }
 `;
 const MenuNav = styled.div`
   display: flex;

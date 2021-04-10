@@ -7,9 +7,7 @@ export const ContactsSlide = () => {
     <ContactsContainer>
       <Title>НАШИ КОНТАКТЫ</Title>
       <Block>
-        <Image>
-          <img src={contacts} alt="" />
-        </Image>
+        <Image src={contacts} alt="" />
         <Contacts>
           <Contact>
             <TitleContact>АДРЕС</TitleContact>
@@ -50,13 +48,22 @@ const Title = styled.div`
   font-family: system-ui;
   font-weight: 700;
   font-size: 144px;
+  @media (min-width: 2000px) {
+    font-size: 200px;
+  }
 `;
 const Block = styled.div`
   display: flex;
   flex-direction: row;
   height: 607px;
+  @media (min-width: 2000px) {
+    height: 900px;
+  }
 `;
-const Image = styled.div``;
+const Image = styled.img`
+  height: 100%;
+  width: 135%;
+`;
 const Contact = styled.div`
   display: flex;
   flex-direction: column;
@@ -75,9 +82,9 @@ const ContactInfo = styled.div`
   font-size: 40px;
 `;
 const Contacts = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   color: white;
   background-color: rgb(13, 189, 163);
-  width: 100%;
 `;

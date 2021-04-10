@@ -7,6 +7,8 @@ import SwipeableViews from "react-swipeable-views";
 import { IconButton } from "@material-ui/core";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+
+// це массив, тут просто объект это название  индекс и ссылка на картинку ( иморт сверху каждой картинки) типа ты когда стрелочки нажимаешь там либо +1 либо -1 и от этого отображаются картинки
 const imagesArray = [
   {
     id: 0,
@@ -51,6 +53,7 @@ export const Atmosphere = () => {
       </Header>
       <Gallery>
         <StyledSwipeableViews index={indexImage} enableMouseEvents>
+          {/*тут ты как раз выводишь массив и обращаешься к конкретному свойству  бля надеюсь поймешь тут не сложно вроде , главное подучи все шоб ответить смогла*/}
           {imagesArray.map((e) => (
             <>
               <IconButton onClick={backImage}>
@@ -64,7 +67,6 @@ export const Atmosphere = () => {
           ))}
         </StyledSwipeableViews>
       </Gallery>
-      <Images></Images>
     </Container>
   );
 };
