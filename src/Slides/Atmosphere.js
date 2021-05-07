@@ -8,7 +8,6 @@ import { IconButton } from "@material-ui/core";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
-// це массив, тут просто объект это название  индекс и ссылка на картинку ( иморт сверху каждой картинки) типа ты когда стрелочки нажимаешь там либо +1 либо -1 и от этого отображаются картинки
 const imagesArray = [
   {
     id: 0,
@@ -44,16 +43,15 @@ export const Atmosphere = () => {
       setIndexImage(indexImage - 1);
     }
   };
-  console.log(indexImage);
   return (
     <Container>
       <Header>
         <Title> УЮТНАЯ АТМОСФЕРА</Title>
-        <UnderTitleText> Инфа о маффине </UnderTitleText>
+        <UnderTitleText> При посещении нашего кафе вас ожидает приятная домашняя атмосфера, приветливые официанты, вкуснейшие десерты, настоящий свежесваренный кофе и бизнес-ланчи. И всё это по самым приятным ценам!
+          С нетерпением всех ждём в гости! </UnderTitleText>
       </Header>
       <Gallery>
         <StyledSwipeableViews index={indexImage} enableMouseEvents>
-          {/*тут ты как раз выводишь массив и обращаешься к конкретному свойству  бля надеюсь поймешь тут не сложно вроде , главное подучи все шоб ответить смогла*/}
           {imagesArray.map((e) => (
             <>
               <IconButton onClick={backImage}>
@@ -97,30 +95,18 @@ const Title = styled.div`
   font-size: 144px;
 `;
 const UnderTitleText = styled.div`
-  font-size: 40px;
+  font-size: 33px;
   font-family: Alieron Regular, serif;
   font-family: system-ui;
   margin-top: 20px;
+  text-align: center;
 `;
-const Images = styled.div`
-  margin-top: 50px;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-`;
 const ImgCenter = styled.img`
   width: 40%;
   border-radius: 8px;
 `;
-const ImgSide = styled.img`
-  width: 650px;
-  height: 330px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 25px;
-`;
+
 const Gallery = styled.div`
   margin-top: 100px;
   display: flex;

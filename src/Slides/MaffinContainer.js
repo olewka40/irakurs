@@ -2,15 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import maf from "../images/maf.jpg";
 import bananaVafles from "../images/banana_vafles.jpg";
-// тут ты импортируешь Хук ( про него напиши шо он делает на сайте есть инфа главнов про react-router)
+
 import { useHistory } from "react-router";
 
 export const MaffinContainer = () => {
-  // тут ты присваиваешь переменной этот хук
   const history = useHistory();
-  // це функция которая переадресует тебя в меню ( прописан путь в апп js там найдешь название MEnuList и путь, обязательно напиши  шо называния совпадать должны путей иначе хуй)
+
   const toMenu = () => {
-    // тут ты обращаешься к хистори после нажатия на кнопку ( на онклике ниже в кнопке функция эта висит) и в методе пуш передаешь путь к меню и все гуд
     history.push("/menu");
   };
   return (
@@ -36,14 +34,13 @@ export const MaffinContainer = () => {
             Бизнес-ланчи
           </MenuText>
           <MenuNav>
-            {/* tut как раз ты переджаешь функцию в онклик, скажешь что так пизже потому что не подсвечивается текст и нет загромождения и прочей хуеты*/}
             <MenuButton onClick={toMenu}>МЕНЮ</MenuButton>
+            <BronButton href="/">Забронировать столик</BronButton>
           </MenuNav>
         </Menu>
       </LeftPart>
       <RightPart>
         <Star>
-          {/* это векторная графика твоей Стар, хуета, можешь не сильно на неё внимание обращать просто скажи что скопировала из конструктора */}
           <svg
             fill="white"
             x="0px"
@@ -58,7 +55,6 @@ export const MaffinContainer = () => {
             </g>
           </svg>
         </Star>
-        {/* тут ты в срц ссылку кидаешь на картинку которая у тебя в папке имагес лежит, чтобы опять же таки не говнокодить , а бабанавафелс импортишь сверху */}
         <BananaVafelsImg src={bananaVafles} />
       </RightPart>
     </>
@@ -151,7 +147,7 @@ const Menu = styled.div`
 `;
 const MenuText = styled.div`
   font-size: 47px;
-
+  text-align: left;
   line-height: 50px;
   font-family: Alieron Regular;
   font-family: system-ui;
@@ -161,12 +157,10 @@ const MenuText = styled.div`
     width: 100%;
   }
 `;
-const MenuButton = styled.button`
-  width: 26%;
-  height: 36%;
-  margin-right: 20px;
-  border-radius: 20px;
-  color: black;
+const MenuButton = styled.div`
+ 
+ 
+  color: white;
   outline: none;
   border: 0;
   font-family: Raleway Heavy, sans-serif;
@@ -175,14 +169,25 @@ const MenuButton = styled.button`
   border-style: solid none;
   font-size: 36px;
   margin-bottom: 20px;
-  @media (min-width: 2000px) {
-    width: 250px;
-    height: 150px;
-  }
+  
+  cursor: pointer;
+  
+`;const BronButton = styled.a`
+  font-size: 36px;
+
+  color: white;
+  font-family: Raleway Heavy, sans-serif;
+  font-family: system-ui;
+  font-weight: 700;
+  cursor: pointer;
 `;
+
 const MenuNav = styled.div`
   display: flex;
+  text-decoration: underline;
+  flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 62%;
+  padding: 20px;;
+  box-sizing: border-box;
 `;
