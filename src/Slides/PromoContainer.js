@@ -10,8 +10,9 @@ export const PromoContainer = () => {
           <Image />
           <Title>Карта постоянного клиента</Title>
           <Text>
-            Каждое воскресенье отличное предложение! Салат, горячее и десерт за
-            795р. Меню обновляется каждую неделю, приходите и пробуйте!
+            У нас действует система скидочных карт для постоянных гостей. <br />{" "}
+            Карты выдаются при систематическом посещении кафе. Скидки начинаются
+            от 5% и повышаются до 15%
           </Text>
         </Promo>
 
@@ -19,8 +20,9 @@ export const PromoContainer = () => {
           <Image />
           <Title>Меню от шефа по специальной цене</Title>
           <Text>
-            Каждое воскресенье отличное предложение! Салат, горячее и десерт за
-            795р. Меню обновляется каждую неделю, приходите и пробуйте!
+            Каждое воскресенье отличное предложение! <br />
+            Салат, горячее и десерт за 795р. Меню обновляется каждую неделю,
+            приходите и пробуйте!
           </Text>
         </Promo>
         <Promo>
@@ -46,16 +48,26 @@ const Promo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  text-align: center;
   width: 475px;
   height: 485px;
   background: #0dbda3;
+  font-family: Raleway Heavy, sans-serif;
+  font-size: 70px;
 `;
 const Image = styled.img`
   border-radius: 50%;
 `;
-const Title = styled.div``;
-const Text = styled.div``;
+const Title = styled.div`
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 150px;
+  margin-bottom: 20px;
+`;
+const Text = styled.div`
+  font-size: 28px;
+  color: #31241eff;
+`;
 const TitlePage = styled.div`
   margin-top: 10px;
 
