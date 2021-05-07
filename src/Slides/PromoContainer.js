@@ -7,28 +7,28 @@ export const PromoContainer = () => {
       <TitlePage> АКЦИИ И ПРЕДЛОЖЕНИЯ</TitlePage>
       <Promos>
         <Promo>
-          <Image></Image>
-          <Title>Скидки за публикацию в Instagram</Title>
-          <Text>
-            Выложите в Instagram публикацию или сторис с отметкой нашего
-            аккаунта @cafe_muffin_kaluga и получите единоразовую скидку 5%
-          </Text>
-        </Promo>
-
-        <Promo>
-          <Image></Image>
+          <Image />
           <Title>Карта постоянного клиента</Title>
           <Text>
             Каждое воскресенье отличное предложение! Салат, горячее и десерт за
             795р. Меню обновляется каждую неделю, приходите и пробуйте!
           </Text>
         </Promo>
+
         <Promo>
-          <Image></Image>
+          <Image />
           <Title>Меню от шефа по специальной цене</Title>
           <Text>
             Каждое воскресенье отличное предложение! Салат, горячее и десерт за
             795р. Меню обновляется каждую неделю, приходите и пробуйте!
+          </Text>
+        </Promo>
+        <Promo>
+          <Image />
+          <Title>Скидки за публикацию в Instagram</Title>
+          <Text>
+            Выложите в Instagram публикацию или сторис с отметкой нашего
+            аккаунта @cafe_muffin_kaluga и получите единоразовую скидку 5%
           </Text>
         </Promo>
       </Promos>
@@ -42,13 +42,14 @@ const PromoSlideContainer = styled.div`
   height: 100%;
 `;
 const Promo = styled.div`
-  margin: 200px 20px 20px;
+  margin: 200px 50px 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   width: 475px;
   height: 485px;
-
-  background: gold;
+  background: #0dbda3;
 `;
 const Image = styled.img`
   border-radius: 50%;
@@ -70,4 +71,7 @@ const Promos = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  > div:nth-child(2) {
+    background: #ff8c00;
+  }
 `;
