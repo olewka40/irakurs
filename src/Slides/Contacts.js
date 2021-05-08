@@ -56,7 +56,7 @@ const Block = styled.div`
   display: flex;
   flex-direction: row;
   height: 607px;
-  @media (min-width: 2000px) {
+  @media (min-width: 2330px) {
     height: 900px;
   }
 `;

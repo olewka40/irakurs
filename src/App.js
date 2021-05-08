@@ -30,12 +30,12 @@ const App = () => {
         <GlobalStyle />
         <Switch>
           <Route exact path="/">
-            <Block id="main">
-              <MaffinContainer />
-            </Block>
-            <Block id="promoes">
-              <PromoContainer />
-            </Block>
+            {/*<Block id="main">*/}
+            {/*  <MaffinContainer />*/}
+            {/*</Block>*/}
+            {/*<Block id="promoes">*/}
+            {/*  <PromoContainer />*/}
+            {/*</Block>*/}
             <Block id="sheff">
               <SheffContainer />
             </Block>

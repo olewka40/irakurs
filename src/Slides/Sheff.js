@@ -1,69 +1,106 @@
 import React from "react";
 import styled from "styled-components";
 import sheff from "../images/shef.png";
+import sheff1 from "../images/shef1.jpg";
 
 export const SheffContainer = () => {
   return (
     <CookerInfo>
-      <Gallery>
-        <Img src={sheff} alt="sheff" />
-      </Gallery>
-      <Info>
-        <TitleInfo>Шеф - повар <br/>Джон Вандербоорен</TitleInfo>
-        <TextInfo>
-            "Моя преданность кулинарии, отличной еде и блюдам живет в моей крови, всегда в моих мыслях. И вовсе неважно, будет ли это для королей или друзей и семьи. И все гости - постоянные, случайные, местные и приезжие - всегда радуют меня!"
-        </TextInfo>
-      </Info>
+      <Title>
+        ШЕФ-ПОВАР <br />
+        ДЖОН ВАНДЕРБООРЕН
+      </Title>
+      <Content>
+        <Pictures>
+          <FirstImg src={sheff} />
+          <SecondImg src={sheff1} />
+        </Pictures>
+        <Text>
+          Моя команда и я хотели бы предложить вам гастрономический результат
+          полученного опыта и моей прошедшей карьере - 35 лет работы шеф-поваром
+          на 5 континентах.
+          <br />
+          За всё время моей карьеры я готовил для таких людей как президент
+          Клинтон, Майкл Джексон, Роберт Де Ниро, Эдди Мерфи, королевская семья
+          Англии, а после переезда в Россию регулярно готовил для Бориса
+          Ельцина. Все мои знания и умения мы воплощаем в кафе "Маффин".
+          <br />
+          <CentredText>
+            Моя преданность кулинарии, отличной еде и блюдам живёт в моей крови,
+            всегда в моих мыслях. И вовсе не важно, будет ли это для королей или
+            друзей и семьи. И все гости - постоянные, случайные, местные и
+            приезжие - всегда радуют меня!
+          </CentredText>
+          <Citata>With love, Chef John Vanderbooren</Citata>
+        </Text>
+      </Content>
     </CookerInfo>
   );
 };
 
 const CookerInfo = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 54%;
-  height: 54%;
-`;
-const TextInfo = styled.div`
-  margin-top: 20px;
-  text-align: left;
-  font-size: 30px;
-  padding: 20px;
-
-  @media (max-width: 1920px) {
-    font-size: 25px;
-  }
-`;
-const Gallery = styled.div`
-  display: flex;
-  width: 50%;
-  height: 100%;
-`;
-
-const Img = styled.img`
   width: 100%;
   height: 100%;
+  position: relative;
 `;
-const TitleInfo = styled.div`
-  margin-top: 20px;
-font-size: 35px;
-text-align:center;
-  margin-bottom: 20px;
-
-`;
-
-const Info = styled.div`
-  font-family: Alieron Regular;
+const Title = styled.div`
+  font-size: 70px;
+  text-align: center;
+  font-family: Raleway Heavy, sans-serif;
   font-family: system-ui;
-  align-items: center;
+  font-weight: 700;
+  margin: 0 0 0 180px;
+  color: white;
+`;
+const Content = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+`;
+const Pictures = styled.div`
+  width: 50%;
+`;
+const Text = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  color: white;
-  font-size: 64px;
-
-  background-color: #ff8c00;
+  text-align: justify;
   width: 50%;
   height: 100%;
+  font-size: 36px;
+  color: white;
+
+  line-height: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+
+  font-family: Raleway Heavy, sans-serif;
+`;
+const CentredText = styled.div`
+  text-align: center;
+  margin-left: 75px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  width: 97%;
+`;
+const Citata = styled.div`
+  color: black;
+  width: 100%;
+  text-align: right;
+`;
+
+const FirstImg = styled.img`
+  position: absolute;
+
+  width: 550px;
+  height: 550px;
+  top: 50px;
+  left: 50px;
+`;
+const SecondImg = styled.img`
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 400px;
+  left: 400px;
 `;

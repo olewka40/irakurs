@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-
+import skidka from "./images/15.png";
+import maf from "./images/maf.png";
+import menu from "./images/menu.png";
 export const PromoContainer = () => {
   return (
     <PromoSlideContainer>
       <TitlePage> АКЦИИ И ПРЕДЛОЖЕНИЯ</TitlePage>
       <Promos>
         <Promo>
-          <Image />
+          <Image src={skidka} />
           <Title>Карта постоянного клиента</Title>
           <Text>
             У нас действует система скидочных карт для постоянных гостей. <br />{" "}
@@ -17,7 +19,7 @@ export const PromoContainer = () => {
         </Promo>
 
         <Promo>
-          <Image />
+          <Image src={menu} />
           <Title>Меню от шефа по специальной цене</Title>
           <Text>
             Каждое воскресенье отличное предложение! <br />
@@ -26,7 +28,7 @@ export const PromoContainer = () => {
           </Text>
         </Promo>
         <Promo>
-          <Image />
+          <Image src={maf} />
           <Title>Скидки за публикацию в Instagram</Title>
           <Text>
             Выложите в Instagram публикацию или сторис с отметкой нашего
@@ -44,6 +46,7 @@ const PromoSlideContainer = styled.div`
   height: 100%;
 `;
 const Promo = styled.div`
+  position: relative;
   margin: 200px 50px 20px;
   display: flex;
   flex-direction: column;
@@ -57,6 +60,10 @@ const Promo = styled.div`
 `;
 const Image = styled.img`
   border-radius: 50%;
+  position: absolute;
+  width: 230px;
+  top: -25%;
+  left: 25%;
 `;
 const Title = styled.div`
   font-size: 36px;
@@ -67,6 +74,10 @@ const Title = styled.div`
 const Text = styled.div`
   font-size: 28px;
   color: #31241eff;
+  line-height: 1.3em;
+  font-family: Alieron Regular;
+  font-family: system-ui;
+  font-weight: 400;
 `;
 const TitlePage = styled.div`
   margin-top: 10px;
@@ -74,7 +85,7 @@ const TitlePage = styled.div`
   font-style: normal;
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-family: Raleway Heavy, sans-serif;
+  font-family: Alieron Regular;
   font-family: system-ui;
   font-size: 144px;
 `;
