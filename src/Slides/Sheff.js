@@ -67,11 +67,11 @@ const Text = styled.div`
   text-align: justify;
   width: 50%;
   height: 100%;
-  font-size: 36px;
+  font-size: 31px;
   color: white;
 
   line-height: 50px;
-  padding-right: 50px;
+  padding-right: 39px;
   box-sizing: border-box;
 
   font-family: Raleway Heavy, sans-serif;
@@ -99,8 +99,8 @@ const FirstImg = styled.img`
 `;
 const SecondImg = styled.img`
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   top: 400px;
   left: 400px;
 `;
