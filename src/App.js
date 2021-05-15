@@ -7,6 +7,7 @@ import { Atmosphere } from "./Slides/Atmosphere";
 import { ContactsSlide } from "./Slides/Contacts";
 import { MenuList } from "./MenuList/MenuList";
 import { PromoContainer } from "./Slides/PromoContainer";
+import { CoffeeSlide } from "./Slides/CoffeeContainer";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -30,21 +31,24 @@ const App = () => {
         <GlobalStyle />
         <Switch>
           <Route exact path="/">
-            {/*<Block id="main">*/}
-            {/*  <MaffinContainer />*/}
-            {/*</Block>*/}
-            {/*<Block id="promoes">*/}
-            {/*  <PromoContainer />*/}
-            {/*</Block>*/}
+            <Block id="main">
+              <MaffinContainer />
+            </Block>
+            <Block id="promoes">
+              <PromoContainer />
+            </Block>
             <Block id="sheff">
               <SheffContainer />
             </Block>
             <Block id="atmosphere">
               <Atmosphere />
             </Block>
-            <Block id="contacts">
-              <ContactsSlide />
+            <Block id="coffee">
+              <CoffeeSlide />
             </Block>
+            {/*<Block id="contacts">*/}
+            {/*  <ContactsSlide />*/}
+            {/*</Block>*/}
           </Route>
           <Route path="/menu">
             <MenuList />
@@ -84,8 +88,11 @@ const MainContainer = styled.div`
   #contacts {
     background-color: #ff8c00;
   }
+  #contacts {
+  }
 `;
 const Block = styled.div`
+  position: relative;
   width: 100%;
   // 100 vh  а не проценты потому что тебе нужно чтобы каждый блок , а у тиебя их 4 штуки были во всю высоту экрана, независимо ни от чего, vh = view height то есть видимая выстоа, то шо ты видишь кароче , и поэтому их 4
 
