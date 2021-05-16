@@ -46,9 +46,9 @@ const App = () => {
             <Block id="coffee">
               <CoffeeSlide />
             </Block>
-            {/*<Block id="contacts">*/}
-            {/*  <ContactsSlide />*/}
-            {/*</Block>*/}
+            <Block id="contacts">
+              <ContactsSlide />
+            </Block>
           </Route>
           <Route path="/menu">
             <MenuList />

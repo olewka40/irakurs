@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import backTulskaya from "./images/backgroundTulskaya.jpg";
 import krugCoffee from "./images/Screenshot_4.jpg";
 export const CoffeeSlide = () => {
   return (
@@ -35,16 +34,6 @@ export const CoffeeSlide = () => {
     </>
   );
 };
-
-const BackGroundImage = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: url(${backTulskaya});
-  opacity: 0.6;
-`;
 
 const Content = styled.div`
   position: relative;
