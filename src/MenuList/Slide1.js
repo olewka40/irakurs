@@ -12,43 +12,25 @@ const itemsarray = {
     { name: "Капризе", price: "222" },
   ],
   soups: [
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
+    { name: "Капризе", price: "222" },
+    { name: "Капризе", price: "222" },
+    { name: "Капризе", price: "222" },
+    { name: "Капризе", price: "222" },
+    { name: "Капризе", price: "222" },
   ],
   pizzes: [
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
+    { name: "Капризе", price: "222" },
+    { name: "Капризе", price: "222" },
+    { name: "Капризе", price: "222" },
+    { name: "Капризе", price: "222" },
+    { name: "Капризе", price: "222" },
   ],
   pasteRizzoto: [
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
-    { name: "", price: "" },
+    { name: "Капризе", price: "222" },
+    { name: "Капризе", price: "222" },
+    { name: "Капризе", price: "222" },
+    { name: "Капризе", price: "222" },
+    { name: "Капризе", price: "222" },
   ],
 };
 
@@ -74,9 +56,9 @@ export const FirstSlide = () => {
             </Items>
           </Category>
           <Category>
-            <Title>CАлаты и закуски</Title>
+            <Title>Супы</Title>
             <Items>
-              {itemsarray.salats.map((e) => (
+              {itemsarray.soups.map((e) => (
                 <Item>
                   <ItemName>{e.name}</ItemName>
                   <Price>{e.price}р</Price>
@@ -89,7 +71,7 @@ export const FirstSlide = () => {
         <SecondBlock>
           {" "}
           <Category>
-            <Title>CАлаты и закуски</Title>
+            <Title>Эльзасские пиццы</Title>
             <Items>
               {itemsarray.salats.map((e) => (
                 <Item>
@@ -100,7 +82,7 @@ export const FirstSlide = () => {
             </Items>
           </Category>
           <Category>
-            <Title>CАлаты и закуски</Title>
+            <Title> Пасты и ризотто</Title>
             <Items>
               {itemsarray.salats.map((e) => (
                 <Item>
@@ -112,9 +94,15 @@ export const FirstSlide = () => {
           </Category>
         </SecondBlock>
       </Menu>
+      <Anotate>*меню предоставлено не в полном объеме</Anotate>
     </Container>
   );
 };
+const Anotate = styled.div`
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+`;
 const Img1 = styled.img`
   width: 420px;
   height: 420px;

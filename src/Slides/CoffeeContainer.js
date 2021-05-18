@@ -79,7 +79,7 @@ const TextBlock = styled.div`
 `;
 const Title = styled.div`
   text-decoration: underline;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 700;
 `;
 const Text = styled.div`
