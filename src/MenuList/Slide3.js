@@ -24,26 +24,6 @@ const itemsarray = {
     { name: "Капризе", price: "222" },
     { name: "Капризе", price: "222" },
   ],
-  streetFood: [
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-  ],
-  childMenu: [
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-  ],
 };
 
 export const ThirdSlide = () => {
@@ -186,19 +166,4 @@ const Category = styled.div`
   flex-direction: column;
   padding: 20px;
   box-sizing: border-box;
-`;
-const HR = styled.hr`
-  height: 100%;
-  width: 8px;
-  background-color: #0dbda3;
-  color: #0dbda3;
-  border: 0;
-`;
-const SecondBlock = styled.div`
-  width: 40%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 `;

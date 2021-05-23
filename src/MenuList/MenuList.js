@@ -7,9 +7,9 @@ import { ThirdSlide } from "./Slide3";
 export const MenuList = () => {
   return (
     <MenuListContainer>
-      {/*<Slide>*/}
-      {/*  <FirstSlide />*/}
-      {/*</Slide>*/}
+      <Slide>
+        <FirstSlide />
+      </Slide>
       <Slide>
         <SecondSlide />
       </Slide>

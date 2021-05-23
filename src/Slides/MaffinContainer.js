@@ -4,6 +4,7 @@ import maf from "../images/maf.jpg";
 import bananaVafles from "../images/banana_vafles.jpg";
 
 import { useHistory } from "react-router";
+import { ReserveModal } from "../ReserveModal";
 
 export const MaffinContainer = () => {
   const history = useHistory();
@@ -35,7 +36,8 @@ export const MaffinContainer = () => {
           </MenuText>
           <MenuNav>
             <MenuButton onClick={toMenu}>МЕНЮ</MenuButton>
-            <BronButton href="/">Забронировать столик</BronButton>
+            <ReserveModal />
+
           </MenuNav>
         </Menu>
       </LeftPart>
@@ -158,8 +160,6 @@ const MenuText = styled.div`
   }
 `;
 const MenuButton = styled.div`
- 
- 
   color: white;
   outline: none;
   border: 0;
@@ -169,18 +169,10 @@ const MenuButton = styled.div`
   border-style: solid none;
   font-size: 36px;
   margin-bottom: 20px;
-  
-  cursor: pointer;
-  
-`;const BronButton = styled.a`
-  font-size: 36px;
 
-  color: white;
-  font-family: Raleway Heavy, sans-serif;
-  font-family: system-ui;
-  font-weight: 700;
   cursor: pointer;
 `;
+
 
 const MenuNav = styled.div`
   display: flex;
@@ -188,6 +180,6 @@ const MenuNav = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 20px;;
+  padding: 20px;
   box-sizing: border-box;
 `;

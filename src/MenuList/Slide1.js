@@ -73,7 +73,7 @@ export const FirstSlide = () => {
           <Category>
             <Title>Эльзасские пиццы</Title>
             <Items>
-              {itemsarray.salats.map((e) => (
+              {itemsarray.pizzes.map((e) => (
                 <Item>
                   <ItemName>{e.name}</ItemName>
                   <Price>{e.price}р</Price>
@@ -84,7 +84,7 @@ export const FirstSlide = () => {
           <Category>
             <Title> Пасты и ризотто</Title>
             <Items>
-              {itemsarray.salats.map((e) => (
+              {itemsarray.pasteRizzoto.map((e) => (
                 <Item>
                   <ItemName>{e.name}</ItemName>
                   <Price>{e.price}р</Price>
