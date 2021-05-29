@@ -5,32 +5,43 @@ import img2 from "./imagesMenu/12.jpg";
 import img3 from "./imagesMenu/1.jpg";
 const itemsarray = {
   salats: [
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
+    { name: "Капрезе", price: "360" },
+    { name: "Нисуаз", price: "360" },
+    { name: "Цезарь с курицей", price: "370" },
+    { name: "Азиатский салат", price: "420" },
+    { name: "Корпаччо из говядины", price: "520" },
+    { name: "Микс закусок от шефа", price: "360" },
+    { name: "Сырное ассорти", price: "580" },
+    { name: "Сельдь с гарниром", price: "250" },
   ],
   soups: [
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
+    { name: "Борщ со сметаной", price: "260" },
+    { name: "Французский луковый суп", price: "245" },
+    { name: "Бульябес", price: "365" },
+    { name: "Швейцарский сырный суп", price: "280" },
+    { name: "Грибной суп", price: "280" },
+    { name: "Солянка", price: "300" },
   ],
   pizzes: [
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
+    {
+      name: "Основа на выбор - томатная паста/мягкий творожный сыр",
+      price: "",
+    },
+    { name: "Традиционная французская", price: "295" },
+    { name: "Итальянская", price: "295" },
+    { name: "Гавайская", price: "295" },
+    { name: "Вегатерианская", price: "295" },
+    { name: "Морская", price: "395" },
+    { name: '"Де-люкс"', price: "595" },
+    { name: '"Болоньезе"', price: "355" },
   ],
   pasteRizzoto: [
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
+    { name: "Арабьятта", price: "280" },
+    { name: "Тагиалини-цитрус", price: "260" },
+    { name: "Карбонара", price: "310" },
+    { name: "Болоньезе", price: "310" },
+    { name: "Сливочный ризотто", price: "360" },
+    { name: 'Лазанья "Болоньезе"', price: "360" },
   ],
 };
 
@@ -50,7 +61,7 @@ export const FirstSlide = () => {
               {itemsarray.salats.map((e) => (
                 <Item>
                   <ItemName>{e.name}</ItemName>
-                  <Price>{e.price}р</Price>
+                  <Price>{e.price}</Price>
                 </Item>
               ))}
             </Items>
@@ -61,7 +72,7 @@ export const FirstSlide = () => {
               {itemsarray.soups.map((e) => (
                 <Item>
                   <ItemName>{e.name}</ItemName>
-                  <Price>{e.price}р</Price>
+                  <Price>{e.price}</Price>
                 </Item>
               ))}
             </Items>
@@ -76,7 +87,7 @@ export const FirstSlide = () => {
               {itemsarray.pizzes.map((e) => (
                 <Item>
                   <ItemName>{e.name}</ItemName>
-                  <Price>{e.price}р</Price>
+                  <Price>{e.price}</Price>
                 </Item>
               ))}
             </Items>
@@ -87,7 +98,7 @@ export const FirstSlide = () => {
               {itemsarray.pasteRizzoto.map((e) => (
                 <Item>
                   <ItemName>{e.name}</ItemName>
-                  <Price>{e.price}р</Price>
+                  <Price>{e.price}</Price>
                 </Item>
               ))}
             </Items>
@@ -98,7 +109,7 @@ export const FirstSlide = () => {
     </Container>
   );
 };
-const Anotate = styled.div`
+export const Anotate = styled.div`
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -157,10 +168,10 @@ const Item = styled.div`
 const ItemName = styled.div`
   display: flex;
   justify-content: flex-start;
-  width: 50%;
+  width: 70%;
 `;
 const Price = styled.div`
-  width: 50%;
+  width: 30%;
   display: flex;
   padding-right: 10px;
   box-sizing: border-box;
@@ -174,6 +185,8 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 `;
 const Images = styled.div`
   width: 40%;

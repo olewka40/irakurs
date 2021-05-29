@@ -3,45 +3,62 @@ import styled from "styled-components";
 import img1 from "./imagesMenu/21.jpg";
 import img2 from "./imagesMenu/22.jpg";
 import img3 from "./imagesMenu/23.jpg";
+import { Anotate } from "./Slide1";
 const itemsarray = {
   hot: [
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
+    { name: "Куриные бёдра с жареннымиовощами и картофелем", price: "430" },
+    {
+      name: "Шницель из индейки/свинины с грибным соусом, салатом и картофелем",
+      price: "485",
+    },
+    {
+      name: "Филе Миньон в соусе с картофельным пюре, брокколи и спаржей",
+      price: "780",
+    },
+    {
+      name: "Свинные рёбра-барбекю с картофелем и салатом КоулСлоу",
+      price: "580",
+    },
+    { name: "Рыба дня", price: "540" },
+    { name: "Стейк сёмги", price: "790" },
+    {
+      name:
+        "Утиное филе с соусом из красного вина и ягод, картофельным пюре, карамализированным луком и овощами",
+      price: "860",
+    },
   ],
   breakfasts: [
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
+    { name: "Каша овсяная на молоке", price: "150" },
+    { name: "Каша пшеничная на молоке с тыквой", price: "170" },
+    { name: "Каша рисовая на молоке", price: "160" },
+    { name: "2 сырника со сметаной/джемом", price: "160" },
+    { name: "2 блинчика со сметаной/джемом", price: "150" },
+    { name: "2 франзуцских тоста", price: "120" },
+    { name: "Сэндвич с ветчиной и сыром", price: "195" },
+    { name: "Сэндвич с беконом и яйцом", price: "210" },
+    { name: "Сэндвич с салями и моцареллой", price: "220" },
+    { name: "Омлет (глазунья, пашот, скрэмбл) из 2х яиц", price: "120" },
   ],
   streetFood: [
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
+    { name: "Бифбургер", price: "495" },
+    { name: "Хот дог", price: "355" },
+    { name: "Куриное карри", price: "425" },
+    { name: "Азиатская лапша", price: "375" },
+    { name: "Куриное соте", price: "395" },
+    { name: "Вьетнамский микс", price: "425" },
+    { name: "Китайская лапша", price: "450" },
+    { name: 'Лапша "Бангкок"', price: "450" },
+    { name: "Куриные крылышки", price: "295" },
   ],
   childMenu: [
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
+    { name: "Суп-лапша на курином бульоне", price: "100" },
+    { name: "Салат овощной с растительным маслом", price: "100" },
+    { name: "Мини-бургер", price: "150" },
+    { name: "Мини-шашлык куриный", price: "170" },
+    { name: "Макароны отварные с маслом", price: "90" },
+    { name: "Картошка фри", price: "90" },
+    { name: "Омлет паровой из 2х яиц", price: "120" },
+    { name: "Мини-пицца с ветчиной и сыром", price: "130" },
   ],
 };
 
@@ -61,7 +78,7 @@ export const SecondSlide = () => {
               {itemsarray.hot.map((e) => (
                 <Item>
                   <ItemName>{e.name}</ItemName>
-                  <Price>{e.price}р</Price>
+                  <Price>{e.price}</Price>
                 </Item>
               ))}
             </Items>
@@ -72,7 +89,7 @@ export const SecondSlide = () => {
               {itemsarray.breakfasts.map((e) => (
                 <Item>
                   <ItemName>{e.name}</ItemName>
-                  <Price>{e.price}р</Price>
+                  <Price>{e.price}</Price>
                 </Item>
               ))}
             </Items>
@@ -87,7 +104,7 @@ export const SecondSlide = () => {
               {itemsarray.streetFood.map((e) => (
                 <Item>
                   <ItemName>{e.name}</ItemName>
-                  <Price>{e.price}р</Price>
+                  <Price>{e.price}</Price>
                 </Item>
               ))}
             </Items>
@@ -98,13 +115,14 @@ export const SecondSlide = () => {
               {itemsarray.childMenu.map((e) => (
                 <Item>
                   <ItemName>{e.name}</ItemName>
-                  <Price>{e.price}р</Price>
+                  <Price>{e.price}</Price>
                 </Item>
               ))}
             </Items>
           </Category>
         </SecondBlock>
-      </Menu>
+      </Menu>{" "}
+      <Anotate>*меню предоставлено не в полном объеме</Anotate>
     </Container>
   );
 };
@@ -165,10 +183,10 @@ const Item = styled.div`
 const ItemName = styled.div`
   display: flex;
   justify-content: flex-start;
-  width: 50%;
+  width: 70%;
 `;
 const Price = styled.div`
-  width: 50%;
+  width: 30%;
   display: flex;
   padding-right: 10px;
   box-sizing: border-box;

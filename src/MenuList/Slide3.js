@@ -3,26 +3,73 @@ import styled from "styled-components";
 import img1 from "./imagesMenu/31.jpg";
 import img2 from "./imagesMenu/32.jpg";
 import img3 from "./imagesMenu/33.jpg";
+import { Anotate } from "./Slide1";
 
 const itemsarray = {
-  hot: [
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
+  bar: [
+    { name: "Эспрессо 50мл", price: "90р" },
+    { name: "Двойной эспрессо 100мл", price: "120р" },
+    { name: "Американо 200мл/300мл", price: "130р/145р" },
+    { name: "Капучино 200мл/300мл", price: "145р/165р" },
+    { name: "Латте 200мл/300мл", price: "160р/180р" },
+    { name: "Раф 200мл/300мл", price: "180р/210р" },
+    { name: "Флэт Уайт 200мл/300мл", price: "160р/180р" },
+    { name: "Гляссе 200мл", price: "180р" },
+    { name: "Горячий шоколад 200мл", price: "160р" },
+    { name: "Раф Соленая карамель", price: "210р" },
+    { name: "Миндальный латте", price: "210р" },
   ],
-  breakfasts: [
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
-    { name: "Капризе", price: "222" },
+  bar1: [
+    { name: "Пакетированный чай", price: "222" },
+    {
+      name: "Чай в чайнике черный/зелёный с добавками 350мл/600мл",
+      price: "222",
+    },
+    { name: "Чай Матча, Облепиховый, Малиновый 350мл/600мл", price: "222" },
+    { name: "Фреш апельсиновый/морковный/яблочный", price: "222" },
+    { name: "Фреш морковный со сливками", price: "222" },
+    {
+      name:
+        "Молочный коктейль ванильный/шоколадный/кофейный/карамельный с сиропом",
+      price: "222",
+    },
+    {
+      name:
+        "Молочный коктейль банановый, клубничный, вишневый, киви с натуральными фруктами",
+      price: "222",
+    },
+  ],
+  desserts: [
+    { name: "Чизкейк с топпингом", price: "130р" },
+    { name: "Баваруа фруктово-кремовый", price: "125р" },
+    { name: "Яблочный голландский торт", price: "130р" },
+    { name: "Фруктовый песочный крамбл", price: "130р" },
+    { name: "Тирамису", price: "130р" },
+    { name: "Панаккота", price: "120р" },
+    { name: "Крем-карамель", price: "100р" },
+    {
+      name: "Мороженное ванильное/шоколадное/клубничное без наполнителя",
+      price: "70р",
+    },
+    {
+      name:
+        "Мороженное ванильное/шоколадное/клубничное с наполнителем (шоколад, орехи, фруктовый топпинг)",
+      price: "100р",
+    },
+  ],
+  desserts1: [
+    { name: "Ваинльный маффин", price: "100р" },
+    { name: "Шоколадный маффин", price: "110р" },
+    { name: "Фруктовый маффин", price: "120р" },
+    { name: "Ягодный маффин", price: "130р" },
+    { name: "Вафля оригинальная", price: "130р" },
+    { name: "Наполнители для вафли:", price: "" },
+    { name: "-взбитые сливки", price: "30р" },
+    { name: "-мороженное ванильное", price: "70р" },
+    { name: "-нутелла", price: "40р" },
+    { name: "-клубника/вишня в сиропе", price: "80р" },
+    { name: "-маршмеллоу", price: "30р" },
+    { name: "-банан/киви", price: "30р" },
   ],
 };
 
@@ -37,29 +84,50 @@ export const ThirdSlide = () => {
       <Menu>
         <FirstBlock>
           <Category>
-            <Title>Горячие блюда</Title>
-            <Items>
-              {itemsarray.hot.map((e) => (
-                <Item>
-                  <ItemName>{e.name}</ItemName>
-                  <Price>{e.price}р</Price>
-                </Item>
-              ))}
-            </Items>
+            <Title>Десерты</Title>
+            <Blocks>
+              <Items>
+                {itemsarray.desserts.map((e) => (
+                  <Item>
+                    <ItemName>{e.name}</ItemName>
+                    <Price>{e.price}</Price>
+                  </Item>
+                ))}
+              </Items>
+              <Items>
+                {itemsarray.desserts1.map((e) => (
+                  <Item>
+                    <ItemName>{e.name}</ItemName>
+                    <Price>{e.price}</Price>
+                  </Item>
+                ))}
+              </Items>{" "}
+            </Blocks>
           </Category>
           <Category>
-            <Title>Завтраки</Title>
-            <Items>
-              {itemsarray.breakfasts.map((e) => (
-                <Item>
-                  <ItemName>{e.name}</ItemName>
-                  <Price>{e.price}р</Price>
-                </Item>
-              ))}
-            </Items>
+            <Title>Напитки</Title>
+            <Blocks>
+              <Items>
+                {itemsarray.bar.map((e) => (
+                  <Item>
+                    <ItemName>{e.name}</ItemName>
+                    <Price>{e.price}</Price>
+                  </Item>
+                ))}
+              </Items>
+              <Items>
+                {itemsarray.bar1.map((e) => (
+                  <Item>
+                    <ItemName>{e.name}</ItemName>
+                    <Price>{e.price}р</Price>
+                  </Item>
+                ))}
+              </Items>
+            </Blocks>
           </Category>
         </FirstBlock>
-      </Menu>
+      </Menu>{" "}
+      <Anotate>*меню предоставлено не в полном объеме</Anotate>
     </Container>
   );
 };
@@ -103,6 +171,15 @@ const Items = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  line-height: 23px;
+`;
+const Blocks = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  > div {
+    margin: 0 20px;
+  }
 `;
 const Item = styled.div`
   margin-top: 5px;
@@ -118,10 +195,10 @@ const Item = styled.div`
 const ItemName = styled.div`
   display: flex;
   justify-content: flex-start;
-  width: 50%;
+  width: 70%;
 `;
 const Price = styled.div`
-  width: 50%;
+  width: 30%;
   display: flex;
   padding-right: 10px;
   box-sizing: border-box;
@@ -148,10 +225,8 @@ const Menu = styled.div`
   flex-direction: column;
 
   width: 60%;
-  height: 685px;
 `;
 const FirstBlock = styled.div`
-  width: 70%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -164,6 +239,5 @@ const Category = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
   box-sizing: border-box;
 `;
