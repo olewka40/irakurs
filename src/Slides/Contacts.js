@@ -12,6 +12,7 @@ export const ContactsSlide = () => {
           <Contact>
             <TitleContact>АДРЕС</TitleContact>
             <ContactInfo>г. Калуга ул.Театральная 43/8 </ContactInfo>
+            <ContactInfo>г. Калуга ул. Тульская 67</ContactInfo>
           </Contact>
           <Contact>
             <TitleContact>EMAIL</TitleContact>

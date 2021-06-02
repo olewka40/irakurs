@@ -98,7 +98,7 @@ export const SecondSlide = () => {
         <HR />
         <SecondBlock>
           {" "}
-          <Category>
+          <Category2>
             <Title>Street food</Title>
             <Items>
               {itemsarray.streetFood.map((e) => (
@@ -108,8 +108,8 @@ export const SecondSlide = () => {
                 </Item>
               ))}
             </Items>
-          </Category>
-          <Category>
+          </Category2>
+          <Category2>
             <Title> Детское меню</Title>
             <Items>
               {itemsarray.childMenu.map((e) => (
@@ -119,7 +119,7 @@ export const SecondSlide = () => {
                 </Item>
               ))}
             </Items>
-          </Category>
+          </Category2>
         </SecondBlock>
       </Menu>{" "}
       <Anotate>*меню предоставлено не в полном объеме</Anotate>
@@ -132,6 +132,15 @@ const Img1 = styled.img`
   height: 340px;
   position: absolute;
   left: -150px;
+  @media (max-width: 1500px) {
+    width: 384px;
+    height: 288px;
+  }
+  @media (min-width: 2500px) {
+    width: 768px;
+    height: 510px;
+    left: -225px;
+  }
 `;
 const Img2 = styled.img`
   width: 410px;
@@ -139,6 +148,16 @@ const Img2 = styled.img`
   position: absolute;
   right: 10px;
   top: calc(50% - 173px);
+  @media (max-width: 1500px) {
+    width: 307px;
+    height: 260px;
+    top: calc(50% - 130px);
+  }
+  @media (min-width: 2500px) {
+    width: 615px;
+    height: 519px;
+    top: calc(50% - 260px);
+  }
 `;
 const Img3 = styled.img`
   width: 334px;
@@ -147,6 +166,16 @@ const Img3 = styled.img`
   bottom: 0;
   right: 0;
   z-index: 2;
+  @media (max-width: 1500px) {
+    width: 267px;
+    height: 270px;
+  }
+  @media (min-width: 2500px) {
+    width: 501px;
+    height: 490px;
+  }
+
+}
 `;
 const Title = styled.div`
   width: 412px;
@@ -163,6 +192,13 @@ const Title = styled.div`
   font-weight: 700;
   margin-bottom: 20px;
   margin-top: 40px;
+  @media (max-width: 1500px) {
+    font-size: 25px;
+  }
+  @media (min-width: 2500px) {
+    font-size: 40px;
+    height: 72px;
+  }
 `;
 const Items = styled.div`
   width: 100%;
@@ -179,6 +215,12 @@ const Item = styled.div`
   font-family: system-ui;
   font-size: 20px;
   color: #54443e;
+  @media (max-width: 1500px) {
+    font-size: 14px;
+  }
+  @media (min-width: 2500px) {
+    font-size: 30px;
+  }
 `;
 const ItemName = styled.div`
   display: flex;
@@ -221,6 +263,9 @@ const FirstBlock = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 1500px) {
+    width: 52%;
+  }
 `;
 const Category = styled.div`
   width: 100%;
@@ -230,6 +275,21 @@ const Category = styled.div`
   flex-direction: column;
   padding: 20px;
   box-sizing: border-box;
+  @media (max-width: 1500px) {
+    width: 533px;
+  }
+`;
+const Category2 = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  @media (max-width: 1500px) {
+    width: 400px;
+  }
 `;
 const HR = styled.hr`
   height: 100%;

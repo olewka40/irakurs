@@ -113,11 +113,27 @@ export const Anotate = styled.div`
   position: absolute;
   bottom: 20px;
   right: 20px;
+  @media (max-width: 1500px) {
+    font-size: 14px;
+    bottom: 10px;
+    right: 10px;
+  }
+  @media (min-width: 2500px) {
+    font-size: 24px;
+  }
 `;
 const Img1 = styled.img`
   width: 420px;
   height: 420px;
   position: absolute;
+  @media (max-width: 1500px) {
+    width: 315px;
+    height: 315px;
+  }
+  @media (min-width: 2500px) {
+    width: 630px;
+    height: 630px;
+  }
 `;
 const Img2 = styled.img`
   width: 420px;
@@ -126,10 +142,32 @@ const Img2 = styled.img`
   right: 0;
   top: calc(50% - 210px);
   z-index: 2;
+  @media (max-width: 1500px) {
+    width: 315px;
+    height: 315px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 157px);
+    z-index: 2;
+  }
+  @media (min-width: 2500px) {
+    width: 630px;
+    height: 630px;
+    top: calc(50% - 315px);
+  }
 `;
 const Img3 = styled.img`
   width: 420px;
   height: 420px;
+  @media (max-width: 1500px) {
+    width: 315px;
+    height: 315px;
+  }
+  @media (min-width: 2500px) {
+    width: 630px;
+    height: 630px;
+  }
+
   position: absolute;
   bottom: 0;
 `;
@@ -148,6 +186,13 @@ const Title = styled.div`
   font-weight: 700;
   margin-bottom: 20px;
   margin-top: 40px;
+  @media (max-width: 1500px) {
+    font-size: 25px;
+  }
+  @media (min-width: 2500px) {
+    font-size: 40px;
+    height: 72px;
+  }
 `;
 const Items = styled.div`
   width: 100%;
@@ -164,6 +209,12 @@ const Item = styled.div`
   font-family: system-ui;
   font-size: 20px;
   color: #54443e;
+  @media (max-width: 1500px) {
+    font-size: 14px;
+  }
+  @media (min-width: 2500px) {
+    font-size: 32px;
+  }
 `;
 const ItemName = styled.div`
   display: flex;
@@ -215,6 +266,12 @@ const Category = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 1500px) {
+    width: 309px;
+  }
+  @media (min-width: 2500px) {
+    width: 630px;
+  }
 `;
 const HR = styled.hr`
   height: 100%;

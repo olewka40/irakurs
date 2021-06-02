@@ -136,6 +136,12 @@ const Img1 = styled.img`
   position: absolute;
   width: 340px;
   right: 0;
+  @media (max-width: 1500px) {
+    width: 255px;
+  }
+  @media (min-width: 2500px) {
+    width: 510px;
+  }
 `;
 const Img2 = styled.img`
   width: 410px;
@@ -143,6 +149,20 @@ const Img2 = styled.img`
   position: absolute;
   left: 10px;
   top: calc(50% - 173px);
+  @media (max-width: 1500px) {
+    width: 307px;
+    height: 259px;
+    top: calc(50% - 100px);
+    left: -150px;
+    z-index: 2;
+  }
+  @media (min-width: 2500px) {
+    width: 615px;
+    height: 519px;
+    top: calc(50% - 259px);
+    left: -300px;
+    z-index: 2;
+  }
 `;
 const Img3 = styled.img`
   width: 380px;
@@ -150,6 +170,12 @@ const Img3 = styled.img`
   bottom: 10px;
   right: 0;
   z-index: 0;
+  @media (max-width: 1500px) {
+    width: 285px;
+  }
+  @media (min-width: 2500px) {
+    width: 570px;
+  }
 `;
 const Title = styled.div`
   width: 412px;
@@ -166,12 +192,24 @@ const Title = styled.div`
   font-weight: 700;
   margin-bottom: 20px;
   margin-top: 40px;
+  @media (max-width: 1500px) {
+    font-size: 26px;
+    width: 350px;
+    height: 38px;
+  }
+  @media (min-width: 2500px) {
+    height: 72px;
+    font-size: 42px;
+  }
 `;
 const Items = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   line-height: 23px;
+  @media (max-width: 1500px) {
+    line-height: 17px;
+  }
 `;
 const Blocks = styled.div`
   display: flex;
@@ -191,6 +229,13 @@ const Item = styled.div`
   font-family: system-ui;
   font-size: 20px;
   color: #54443e;
+  @media (max-width: 1500px) {
+    font-size: 14px;
+  }
+  @media (min-width: 2500px) {
+    font-size: 30px;
+    line-height: 36px;
+  }
 `;
 const ItemName = styled.div`
   display: flex;
@@ -217,6 +262,12 @@ const Images = styled.div`
   width: 30%;
   height: 100%;
   position: relative;
+  @media (max-width: 1500px) {
+    width: 15%;
+  }
+  @media (min-width: 2500px) {
+    width: 15%;
+  }
 `;
 const Menu = styled.div`
   display: flex;
