@@ -35,21 +35,21 @@ const App = () => {
             <Block id="main">
               <MaffinContainer />
             </Block>
-            <Block id="promoes">
-              <PromoContainer />
-            </Block>
-            <Block id="sheff">
-              <SheffContainer />
-            </Block>
-            <Block id="atmosphere">
-              <Atmosphere />
-            </Block>
-            <Block id="coffee">
-              <CoffeeSlide />
-            </Block>
-            <Block id="contacts">
-              <ContactsSlide />
-            </Block>
+            {/*<Block id="promoes">*/}
+            {/*  <PromoContainer />*/}
+            {/*</Block>*/}
+            {/*<Block id="sheff">*/}
+            {/*  <SheffContainer />*/}
+            {/*</Block>*/}
+            {/*<Block id="atmosphere">*/}
+            {/*  <Atmosphere />*/}
+            {/*</Block>*/}
+            {/*  <Block id="coffee">*/}
+            {/*    <CoffeeSlide />*/}
+            {/*  </Block>*/}
+            {/*  <Block id="contacts">*/}
+            {/*    <ContactsSlide />*/}
+            {/*  </Block>*/}
           </Route>
           <Route path="/menu">
             <MenuList />

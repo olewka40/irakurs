@@ -54,6 +54,10 @@ const Orange = styled.div`
   height: calc(100% - 80px);
   background-color: rgba(255, 140, 0, 85%);
   opacity: 1;
+  @media (min-width: 2000px) {
+    width: calc(100% - 160px);
+    height: calc(100% - 160px);
+  }
 `;
 const ImgCoffee = styled.div`
   position: relative;
@@ -81,6 +85,12 @@ const Title = styled.div`
   text-decoration: underline;
   font-size: 70px;
   font-weight: 700;
+  @media (min-width: 2000px) {
+    font-size: 95px;
+  }
+  @media (max-width: 1500px) {
+    font-size: 48px;
+  }
 `;
 const Text = styled.div`
   margin-top: 100px;
@@ -88,14 +98,41 @@ const Text = styled.div`
   font-size: 35px;
   font-weight: 700;
   line-height: 65px;
+  @media (min-width: 2000px) {
+    font-size: 48px;
+    line-height: 95px;
+  }
+  @media (max-width: 1500px) {
+    margin-top: 70px;
+    text-align: right;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 55px;
+  }
 `;
 const SVG = styled.svg`
   width: 700px;
   height: 700px;
+  @media (max-width: 1500px) {
+    width: 500px;
+    height: 500px;
+  }
+  @media (min-width: 2330px) {
+    width: 900px;
+    height: 900px;
+  }
 `;
 const Img = styled.img`
   position: absolute;
   border-radius: 50%;
   width: 550px;
   height: 550px;
+  @media (max-width: 1500px) {
+    width: 420px;
+    height: 420px;
+  }
+  @media (min-width: 2330px) {
+    width: 750px;
+    height: 750px;
+  }
 `;

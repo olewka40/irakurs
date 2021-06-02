@@ -51,6 +51,12 @@ const Title = styled.div`
   font-weight: 700;
   margin: 0 0 0 180px;
   color: white;
+  @media (min-width: 2000px) {
+    font-size: 100px;
+  }
+  @media (max-width: 1500px) {
+    font-size: 50px;
+  }
 `;
 const Content = styled.div`
   width: 100%;
@@ -75,6 +81,14 @@ const Text = styled.div`
   box-sizing: border-box;
 
   font-family: Raleway Heavy, sans-serif;
+  @media (min-width: 2000px) {
+    font-size: 45px;
+    line-height: 70px;
+  }
+  @media (max-width: 1500px) {
+    font-size: 29px;
+    line-height: 34px;
+  }
 `;
 const CentredText = styled.div`
   text-align: center;
@@ -96,11 +110,33 @@ const FirstImg = styled.img`
   height: 550px;
   top: 50px;
   left: 50px;
+  @media (min-width: 2000px) {
+    width: 700px;
+    height: 700px;
+    top: 75px;
+    left: 75px;
+  }
+  @media (max-width: 1500px) {
+    width: 400px;
+    height: 400px;
+    top: 50px;
+    left: 50px;
+  }
 `;
 const SecondImg = styled.img`
   position: absolute;
   width: 500px;
   height: 500px;
-  top: 400px;
-  left: 400px;
+  top: 450px;
+  left: 450px;
+  @media (min-width: 2000px) {
+    width: 750px;
+    height: 750px;
+  }
+  @media (max-width: 1500px) {
+    width: 400px;
+    height: 400px;
+    top: 250px;
+    left: 250px;
+  }
 `;

@@ -18,7 +18,7 @@ export const ContactsSlide = () => {
             <TitleContact>EMAIL</TitleContact>
             <ContactInfo>cafevangogh@inbox.ru</ContactInfo>
           </Contact>
-
+          {/**/}
           <Contact>
             <TitleContact>ТЕЛЕФОН</TitleContact>
             <ContactInfo>+7(991) 409-44-11</ContactInfo>
@@ -49,21 +49,35 @@ const Title = styled.div`
   font-family: system-ui;
   font-weight: 700;
   font-size: 144px;
+  @media (max-width: 1500px) {
+    font-size: 100px;
+  }
   @media (min-width: 2000px) {
     font-size: 200px;
+    padding: 100px 100px;
   }
 `;
 const Block = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   height: 607px;
+  @media (max-width: 1500px) {
+    height: 535px;
+  }
   @media (min-width: 2330px) {
-    height: 900px;
+    height: 913px;
+    margin-top: 61px;
   }
 `;
 const Image = styled.img`
-  height: 100%;
-  width: 135%;
+  width: 60%;
+  @media (max-width: 1500px) {
+    width: 70%;
+  }
+  @media (min-width: 2330px) {
+    width: 75%;
+  }
 `;
 const Contact = styled.div`
   display: flex;
@@ -76,11 +90,23 @@ const TitleContact = styled.div`
   font-weight: 700;
 
   font-size: 40px;
+  @media (max-width: 1500px) {
+    font-size: 25px;
+  }
+  @media (min-width: 2330px) {
+    font-size: 56px;
+  }
 `;
 const ContactInfo = styled.div`
   font-family: Alieron Regular, serif;
   font-family: system-ui;
   font-size: 40px;
+  @media (max-width: 1500px) {
+    font-size: 27px;
+  }
+  @media (min-width: 2330px) {
+    font-size: 48px;
+  }
 `;
 const Contacts = styled.div`
   width: 100%;
@@ -88,4 +114,7 @@ const Contacts = styled.div`
   flex-direction: column;
   color: white;
   background-color: rgb(13, 189, 163);
+  @media (min-width: 2330px) {
+    width: 30%;
+  }
 `;

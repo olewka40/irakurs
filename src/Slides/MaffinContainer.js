@@ -37,7 +37,6 @@ export const MaffinContainer = () => {
           <MenuNav>
             <MenuButton onClick={toMenu}>МЕНЮ</MenuButton>
             <ReserveModal />
-
           </MenuNav>
         </Menu>
       </LeftPart>
@@ -101,6 +100,10 @@ const TopText = styled.div`
   @media (min-width: 2000px) {
     font-size: 250px;
   }
+  @media (max-width: 1500px) {
+    font-size: 133px;
+    line-height: 227px;
+  }
 
   // это селектор называется (:) типа ты говоришь последнему элементу который находится тут что он должен на 100 подняться
   div:last-child {
@@ -117,6 +120,9 @@ const BotText = styled.div`
   margin-left: 10px;
   @media (min-width: 2000px) {
     font-size: 85px;
+  }
+  @media (max-width: 1500px) {
+    font-size: 38px;
   }
 `;
 const Star = styled.div`
@@ -148,15 +154,19 @@ const Menu = styled.div`
   height: 95%;
 `;
 const MenuText = styled.div`
-  font-size: 47px;
+  font-size: 70px;
   text-align: left;
-  line-height: 50px;
+  line-height: 100px;
   font-family: Alieron Regular;
   font-family: system-ui;
   @media (min-width: 2000px) {
     font-size: 90px;
-    line-height: 100px;
-    width: 100%;
+    line-height: 140px;
+    width: 55%;
+  }
+  @media (max-width: 1500px) {
+    font-size: 45px;
+    line-height: 75px;
   }
 `;
 const MenuButton = styled.div`
@@ -169,10 +179,11 @@ const MenuButton = styled.div`
   border-style: solid none;
   font-size: 36px;
   margin-bottom: 20px;
-
   cursor: pointer;
+  @media (min-width: 2000px) {
+    font-size: 64px;
+  }
 `;
-
 
 const MenuNav = styled.div`
   display: flex;

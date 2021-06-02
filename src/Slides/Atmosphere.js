@@ -47,8 +47,13 @@ export const Atmosphere = () => {
     <Container>
       <Header>
         <Title> УЮТНАЯ АТМОСФЕРА</Title>
-        <UnderTitleText> При посещении нашего кафе вас ожидает приятная домашняя атмосфера, приветливые официанты, вкуснейшие десерты, настоящий свежесваренный кофе и бизнес-ланчи. И всё это по самым приятным ценам!
-          С нетерпением всех ждём в гости! </UnderTitleText>
+        <UnderTitleText>
+          {" "}
+          При посещении нашего кафе вас ожидает приятная домашняя атмосфера,
+          приветливые официанты, вкуснейшие десерты, настоящий свежесваренный
+          кофе и бизнес-ланчи. И всё это по самым приятным ценам! С нетерпением
+          всех ждём в гости!{" "}
+        </UnderTitleText>
       </Header>
       <Gallery>
         <StyledSwipeableViews index={indexImage} enableMouseEvents>
@@ -81,7 +86,6 @@ const Header = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 268px;
 `;
 const Title = styled.div`
   margin-top: 10px;
@@ -93,6 +97,12 @@ const Title = styled.div`
   font-family: system-ui;
   font-weight: 700;
   font-size: 144px;
+  @media (min-width: 2000px) {
+    font-size: 170px;
+  }
+  @media (max-width: 1500px) {
+    font-size: 100px;
+  }
 `;
 const UnderTitleText = styled.div`
   font-size: 33px;
@@ -100,6 +110,12 @@ const UnderTitleText = styled.div`
   font-family: system-ui;
   margin-top: 20px;
   text-align: center;
+  @media (min-width: 2000px) {
+    font-size: 45px;
+  }
+  @media (max-width: 1500px) {
+    font-size: 28px;
+  }
 `;
 
 const ImgCenter = styled.img`
@@ -112,6 +128,9 @@ const Gallery = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1500px) {
+    margin-top: 60px;
+  }
 `;
 const StyledSwipeableViews = styled(SwipeableViews)`
   > div > div {
