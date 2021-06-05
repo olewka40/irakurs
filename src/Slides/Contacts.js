@@ -62,7 +62,7 @@ const Block = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: 607px;
+  height: 679px;
   @media (max-width: 1500px) {
     height: 535px;
   }

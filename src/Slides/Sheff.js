@@ -95,7 +95,7 @@ const CentredText = styled.div`
   margin-left: 75px;
   margin-top: 20px;
   box-sizing: border-box;
-  width: 97%;
+  width: 96%;
 `;
 const Citata = styled.div`
   color: black;
