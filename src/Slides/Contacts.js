@@ -25,7 +25,8 @@ export const ContactsSlide = () => {
           </Contact>
           <Contact>
             <TitleContact>ГРАФИК РАБОТЫ</TitleContact>
-            <ContactInfo>Ежедневно с 9:00 до 23:00</ContactInfo>
+            <ContactInfo>Театральная с 9:00 до 23:00</ContactInfo>
+            <ContactInfo>Тульская с 8:00 до 20:00</ContactInfo>
           </Contact>
           <Contact>
             <TitleContact></TitleContact>
