@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={window.location.pathname || ""}>
       <MainContainer>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
