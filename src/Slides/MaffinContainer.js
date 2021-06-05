@@ -154,9 +154,9 @@ const Menu = styled.div`
   height: 95%;
 `;
 const MenuText = styled.div`
-  font-size: 70px;
+  font-size: 49px;
   text-align: left;
-  line-height: 100px;
+  line-height: 59px;
   font-family: Alieron Regular;
   font-family: system-ui;
   @media (min-width: 2000px) {
