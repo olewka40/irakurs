@@ -183,6 +183,11 @@ const MenuButton = styled.div`
   @media (min-width: 2000px) {
     font-size: 64px;
   }
+  @media (max-width: 1500px) {
+    font-size: 28px;
+
+    margin-bottom: 0;
+  }
 `;
 
 const MenuNav = styled.div`
