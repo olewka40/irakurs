@@ -92,7 +92,7 @@ const TitleContact = styled.div`
 
   font-size: 40px;
   @media (max-width: 1500px) {
-    font-size: 25px;
+    font-size: 23px;
   }
   @media (min-width: 2330px) {
     font-size: 56px;
@@ -103,7 +103,7 @@ const ContactInfo = styled.div`
   font-family: system-ui;
   font-size: 40px;
   @media (max-width: 1500px) {
-    font-size: 27px;
+    font-size: 24px;
   }
   @media (min-width: 2330px) {
     font-size: 48px;
