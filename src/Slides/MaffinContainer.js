@@ -168,8 +168,8 @@ const MenuText = styled.div`
     width: 55%;
   }
   @media (max-width: 1500px) {
-    font-size: 36px;
-    line-height: 56px;
+    font-size: 26px;
+    line-height: 36px;
   }
 `;
 const MenuButton = styled.div`

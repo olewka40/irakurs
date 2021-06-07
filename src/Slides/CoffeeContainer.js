@@ -105,7 +105,7 @@ const Text = styled.div`
   @media (max-width: 1500px) {
     margin-top: 70px;
     text-align: right;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 55px;
   }

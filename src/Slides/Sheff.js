@@ -86,8 +86,8 @@ const Text = styled.div`
     line-height: 70px;
   }
   @media (max-width: 1500px) {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 22px;
+    line-height: 32px;
   }
 `;
 const CentredText = styled.div`
@@ -125,8 +125,8 @@ const FirstImg = styled.img`
 `;
 const SecondImg = styled.img`
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 480px;
+  height: 480px;
   top: 450px;
   left: 450px;
   @media (min-width: 2000px) {
