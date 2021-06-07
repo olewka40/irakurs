@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/irakurs/static/js/main.364dbd75.chunk.js",
-    "main.js.map": "/irakurs/static/js/main.364dbd75.chunk.js.map",
+    "main.js": "/irakurs/static/js/main.0603175e.chunk.js",
+    "main.js.map": "/irakurs/static/js/main.0603175e.chunk.js.map",
     "runtime-main.js": "/irakurs/static/js/runtime-main.d9e8f846.js",
     "runtime-main.js.map": "/irakurs/static/js/runtime-main.d9e8f846.js.map",
     "static/js/2.c4786ce2.chunk.js": "/irakurs/static/js/2.c4786ce2.chunk.js",
@@ -9,6 +9,7 @@
     "index.html": "/irakurs/index.html",
     "static/js/2.c4786ce2.chunk.js.LICENSE.txt": "/irakurs/static/js/2.c4786ce2.chunk.js.LICENSE.txt",
     "static/media/1.c4bd266d.jpg": "/irakurs/static/media/1.c4bd266d.jpg",
+    "static/media/11.c86515b2.jpg": "/irakurs/static/media/11.c86515b2.jpg",
     "static/media/12.a3d626b5.jpg": "/irakurs/static/media/12.a3d626b5.jpg",
     "static/media/15.3053b964.png": "/irakurs/static/media/15.3053b964.png",
     "static/media/21.d58d0b63.jpg": "/irakurs/static/media/21.d58d0b63.jpg",
@@ -32,6 +33,6 @@
   "entrypoints": [
     "static/js/runtime-main.d9e8f846.js",
     "static/js/2.c4786ce2.chunk.js",
-    "static/js/main.364dbd75.chunk.js"
+    "static/js/main.0603175e.chunk.js"
   ]
 }
