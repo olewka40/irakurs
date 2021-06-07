@@ -73,7 +73,7 @@ const Text = styled.div`
   text-align: justify;
   width: 50%;
   height: 100%;
-  font-size: 31px;
+  font-size: 28px;
   color: white;
 
   line-height: 50px;
@@ -82,11 +82,11 @@ const Text = styled.div`
 
   font-family: Raleway Heavy, sans-serif;
   @media (min-width: 2000px) {
-    font-size: 45px;
+    font-size: 41px;
     line-height: 70px;
   }
   @media (max-width: 1500px) {
-    font-size: 29px;
+    font-size: 24px;
     line-height: 34px;
   }
 `;

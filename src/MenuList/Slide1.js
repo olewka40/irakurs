@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img1 from "./imagesMenu/1.jpg";
+import img1 from "./imagesMenu/11.jpg";
 import img2 from "./imagesMenu/12.jpg";
 import img3 from "./imagesMenu/1.jpg";
 const itemsarray = {

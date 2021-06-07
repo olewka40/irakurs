@@ -62,13 +62,15 @@ const Block = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: 679px;
+  height: 700px;
+  margin-top: 89px;
   @media (max-width: 1500px) {
     height: 535px;
+    margin-top: 0;
   }
   @media (min-width: 2330px) {
     height: 913px;
-    margin-top: 61px;
+    margin-top: 0px;
   }
 `;
 const Image = styled.img`

@@ -35,7 +35,7 @@ export const MaffinContainer = () => {
             Бизнес-ланчи
           </MenuText>
           <MenuNav>
-            <MenuButton onClick={toMenu}>МЕНЮ</MenuButton>
+            <MenuButton onClick={toMenu}>Меню</MenuButton>
             <ReserveModal />
           </MenuNav>
         </Menu>
@@ -152,21 +152,24 @@ const Menu = styled.div`
 
   margin-top: -25px;
   height: 95%;
+  @media (max-width: 1500px) {
+    height: 23%;
+  }
 `;
 const MenuText = styled.div`
-  font-size: 49px;
+  font-size: 42px;
   text-align: left;
-  line-height: 59px;
+  line-height: 57px;
   font-family: Alieron Regular;
   font-family: system-ui;
   @media (min-width: 2000px) {
-    font-size: 90px;
-    line-height: 140px;
+    font-size: 83px;
+    line-height: 100px;
     width: 55%;
   }
   @media (max-width: 1500px) {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 36px;
+    line-height: 56px;
   }
 `;
 const MenuButton = styled.div`
@@ -180,11 +183,14 @@ const MenuButton = styled.div`
   font-size: 36px;
   margin-bottom: 20px;
   cursor: pointer;
+  text-decoration: none;
   @media (min-width: 2000px) {
     font-size: 64px;
+    text-decoration: none;
   }
   @media (max-width: 1500px) {
     font-size: 28px;
+    text-decoration: none;
 
     margin-bottom: 0;
   }
@@ -192,10 +198,10 @@ const MenuButton = styled.div`
 
 const MenuNav = styled.div`
   display: flex;
-  text-decoration: underline;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   padding: 20px;
   box-sizing: border-box;
+  text-decoration: none;
 `;

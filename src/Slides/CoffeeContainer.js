@@ -83,29 +83,29 @@ const TextBlock = styled.div`
 `;
 const Title = styled.div`
   text-decoration: underline;
-  font-size: 70px;
+  font-size: 64px;
   font-weight: 700;
   @media (min-width: 2000px) {
-    font-size: 95px;
+    font-size: 90px;
   }
   @media (max-width: 1500px) {
-    font-size: 48px;
+    font-size: 44px;
   }
 `;
 const Text = styled.div`
   margin-top: 100px;
   text-align: right;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 65px;
   @media (min-width: 2000px) {
-    font-size: 48px;
+    font-size: 44px;
     line-height: 95px;
   }
   @media (max-width: 1500px) {
     margin-top: 70px;
     text-align: right;
-    font-size: 23px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 55px;
   }

@@ -78,6 +78,8 @@ const BronButton = styled.text`
   font-family: system-ui;
   font-weight: 700;
   cursor: pointer;
+  text-decoration: none;
+
   @media (min-width: 2000px) {
     font-size: 64px;
   }
