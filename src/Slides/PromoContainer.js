@@ -18,23 +18,23 @@ export const PromoContainer = () => {
           </Text>
         </Promo>
 
-          <Promo>
-            <Image src={menu} />
-            <Title>Меню от шефа по специальной цене</Title>
-            <Text>
-              Каждое воскресенье отличное предложение! <br />
-              Салат, горячее и десерт за 795р. Меню обновляется каждую неделю,
-              приходите и пробуйте!
-            </Text>
-          </Promo>
-          <Promo>
-            <Image src={maf} />
-            <Title>Скидки за публикацию в Instagram</Title>
-            <Text>
-              Выложите в Instagram публикацию или сторис с отметкой нашего
-              аккаунта @cafe_muffin_kaluga и получите единоразовую скидку 5%
-            </Text>
-          </Promo>
+        <Promo>
+          <Image src={menu} />
+          <Title>Меню от шефа по специальной цене</Title>
+          <Text>
+            Каждое воскресенье отличное предложение! <br />
+            Салат, горячее и десерт за 795р. Меню обновляется каждую неделю,
+            приходите и пробуйте!
+          </Text>
+        </Promo>
+        <Promo>
+          <Image src={maf} />
+          <Title>Скидки за публикацию в Instagram</Title>
+          <Text>
+            Выложите в Instagram публикацию или сторис с отметкой нашего
+            аккаунта @cafe_muffin_kaluga и получите единоразовую скидку 5%
+          </Text>
+        </Promo>
       </Promos>
     </PromoSlideContainer>
   );
@@ -65,7 +65,7 @@ const Promo = styled.div`
   @media (max-width: 1500px) {
     margin: 150px 50px 20px;
     width: 316px;
-    height: 323px;
+    height: 300px;
   }
 `;
 const Image = styled.img`

@@ -92,7 +92,7 @@ const Text = styled.div`
 `;
 const CentredText = styled.div`
   text-align: center;
-  margin-left: 75px;
+  margin-left: 60px;
   margin-top: 20px;
   box-sizing: border-box;
   width: 96%;
